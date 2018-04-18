@@ -73,18 +73,25 @@
 
 <style scoped>
 .gridtem {
-  display: grid;
-  grid-template-columns: feed result;
+  display: flex;
+  grid-template-areas: 'left right';
 }
 
  .feed {
-     width: 600px;
+     width: 50%;
+     padding: 30px 30px 30px 30px;
  }
  .tweetForm {
      padding: 10px;
      margin-bottom: 10px;
      background-color: transparent;
+     grid-area: left;
  }
+ .result {
+     grid-area: right;
+     width: 50%;
+     padding: 30px 30px 30px 30px;
+}
  .buttonWrap {
      width: 100%;
      display: flex;

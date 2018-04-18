@@ -58,7 +58,7 @@ if (error.response) {
 context.commit('setRegisterError',"Sorry, your request failed. We will look into it.");
       });
     },
-    ogin(context,user) {
+    login(context,user) {
       axios.post("/api/login",user).then(response => {
 context.commit('setUser', response.data.user);
 context.commit('setLogin',true);

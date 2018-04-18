@@ -92,6 +92,7 @@
      height: 15px;
      border-radius: 20px;
      background-color: black;
+     color: white;
 }
 .primary {
      background-color: black;
